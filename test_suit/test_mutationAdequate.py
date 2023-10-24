@@ -16,65 +16,77 @@ class MutationAdequateTest(unittest.TestCase):
         expected = Triangle.Type(0)
         self.assertEqual(actual, expected)
 
+    def test3(self):
         actual = Triangle.classify(-1, -1, -1)
         expected = Triangle.Type(0)
         self.assertEqual(actual, expected)
 
+    def test4(self):
         actual = Triangle.classify(-1, 1, 1)
         expected = Triangle.Type(0)
         self.assertEqual(actual, expected)
 
+    def test5(self):
         actual = Triangle.classify(1, 1, 0)
         expected = Triangle.Type(0)
         self.assertEqual(actual, expected)
 
+    def test6(self):
         actual = Triangle.classify(1, 0, 1)
         expected = Triangle.Type(0)
         self.assertEqual(actual, expected)
 
+    def test7(self):
         actual = Triangle.classify(1, 1, 1)
         expected = Triangle.Type(2)
         self.assertEqual(actual, expected)
 
+    def test8(self):
         actual = Triangle.classify(0, 1, 1)
         expected = Triangle.Type(0)
         self.assertEqual(actual, expected)
 
+    def test9(self):
         actual = Triangle.classify(1, 3, 4)
         expected = Triangle.Type(0)
         self.assertEqual(actual, expected)
 
+    def test10(self):
         actual = Triangle.classify(4, 3, 1)
         expected = Triangle.Type(0)
         self.assertEqual(actual, expected)
 
+    def test11(self):
         actual = Triangle.classify(1, 4, 3)
         expected = Triangle.Type(0)
         self.assertEqual(actual, expected)
 
-
-
+    def test12(self):
         actual = Triangle.classify(1, 2, 3)
         expected = Triangle.Type(0)
         self.assertEqual(actual, expected)
 
+    def test13(self):
         actual = Triangle.classify(1, 1, 3)
         expected = Triangle.Type(0)
         self.assertEqual(actual, expected)
 
-    def test3(self):
+    def test14(self):
         actual = Triangle.classify(2, 3, 4)
         expected = Triangle.Type(1)
         self.assertEqual(actual, expected)
 
+    def test15(self):
         actual = Triangle.classify(2, 3, 3)
         expected = Triangle.Type(3)
         self.assertEqual(actual, expected)
 
+    def test16(self):
         actual = Triangle.classify(3, 2, 3)
         expected = Triangle.Type(3)
         self.assertEqual(actual, expected)
 
+    def test17(self):
         actual = Triangle.classify(3, 3, 2)
         expected = Triangle.Type(3)
         self.assertEqual(actual, expected)

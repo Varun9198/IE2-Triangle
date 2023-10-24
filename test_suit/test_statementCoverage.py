@@ -15,27 +15,37 @@ class StatementCoverageTest(unittest.TestCase):
         expected = Triangle.Type.INVALID
         self.assertEqual(actual, expected)
 
+
+    def test3(self):
         actual = Triangle.classify(1, 2, 3)
         expected = Triangle.Type.INVALID
         self.assertEqual(actual, expected)
 
+
+    def test4(self):
         actual = Triangle.classify(1, 1, 3)
         expected = Triangle.Type.INVALID
         self.assertEqual(actual, expected)
 
-    def test3(self):
+    def test5(self):
         actual = Triangle.classify(2, 3, 4)
         expected = Triangle.Type.SCALENE
         self.assertEqual(actual, expected)
 
+
+    def test6(self):
         actual = Triangle.classify(2, 3, 3)
         expected = Triangle.Type.ISOSCELES
         self.assertEqual(actual, expected)
 
+
+    def test7(self):
         actual = Triangle.classify(3, 2, 3)
         expected = Triangle.Type.ISOSCELES
         self.assertEqual(actual, expected)
 
+
+    def test8(self):
         actual = Triangle.classify(3, 3, 2)
         expected = Triangle.Type.ISOSCELES
         self.assertEqual(actual, expected)
